@@ -62,7 +62,7 @@ window.addEventListener('load', function() {
 
   function login() {
     auth.authorize({
-      audience: 'http://localhost',
+      audience: API_ID,
       scope: 'openid profile read:agenda',
       responseType: 'token id_token',
       redirectUri: 'http://localhost:3000'
